@@ -6,7 +6,7 @@
 /*   By: tkong <tkong@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/10 19:22:59 by tkong             #+#    #+#             */
-/*   Updated: 2023/02/11 02:44:59 by tkong            ###   ########.fr       */
+/*   Updated: 2023/02/11 03:21:12 by tkong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,8 +84,8 @@ void PhoneBook::search() {
 	}
 	printList();
 	getString("Select number: ", str);
-	sel = stoi(str);
-	if (sel >= 1 && sel <= size) {
+	sel = std::atoi(str.c_str());
+	if (sel >= 1 && sel <= std::min(8, size)) {
 		printContact(sel - 1);
 	} else {
 		std::cout << "Please make sure your select that selectable choice.\n";
