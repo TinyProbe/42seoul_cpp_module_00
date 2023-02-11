@@ -6,10 +6,11 @@
 /*   By: tkong <tkong@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/10 19:22:59 by tkong             #+#    #+#             */
-/*   Updated: 2023/02/11 02:44:35 by tkong            ###   ########.fr       */
+/*   Updated: 2023/02/11 14:17:07 by tkong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #ifndef CONTACT_HPP
 #define CONTACT_HPP
 
